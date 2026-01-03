@@ -1,0 +1,12 @@
+This project will manually implement a two machine learning models: a regression model and a classfication model. They will be trained and tested with datasets representing real life scenarios and statistics. 
+
+
+The following is the breakdown of how this will be implemented.
+1) A Node class will be created
+2) A Model abstract class will be created, with derived classes RegressionModel and ClassificationModel each using a linked Node list. Each will have a unique forwardPropagation function with the regression/classification model using ReLU activation function (manually implemented) in the hidden layers and a linear activation/softmax activation The regression/classification models will also have a loss function, mean square error and cross-entropy loss respectively. Each will have a backpropogation function to adjust the weights and biases of the nodes.
+
+Training will be done over several epochs with a graph that depicts the accuracy of the models for a test dataset after each successive training (it should converge towards 0). To account for categorical features of a dataset, different functions for encoding will be implemented - one-hot encoding, numerical encoding, binary encoding, effect, etc - that will be utilized based on the type of categorical data.
+
+The structure of the artificial neural network will be as follows:
+Given n input values/characteristics and m outputs/predictions, there will be an input layer with n nodes, 1 - 2 hidden layers (that will be adjusted as necessary)  each with 3n/2 to 2n nodes (will be adjusted as well), and an ouput layer with m nodes.
+
